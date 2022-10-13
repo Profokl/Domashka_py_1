@@ -6,12 +6,12 @@ number1 = int(input('Введите координату точки Х: '))
 number2 = int(input('Введите координату точки Y:'))
 
 if (number1 >= 1 and number2 >= 1):
-    print('номер четверти 4')
-if (number1 <= -1 and number2 >= 1):
     print('номер четверти 1')
-if (number1 <= -1 and number2 <= -1):
+if (number1 <= -1 and number2 >= 1):
     print('номер четверти 2')
-if (number1 >= 1 and number2 <= -1):
+if (number1 <= -1 and number2 <= -1):
     print('номер четверти 3')
+if (number1 >= 1 and number2 <= -1):
+    print('номер четверти 4')
 if (number1 == 0 or number2 == 0):
     print('координаты введены не верно')
